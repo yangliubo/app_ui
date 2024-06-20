@@ -1,0 +1,24 @@
+# # 初始化安装、重置、重启
+# desired_caps = {}
+# desired_caps['platformName'] = 'Android'  # 设备系统
+# desired_caps['platformVersion'] = '13'  # 设备系统版本
+# desired_caps['deviceName'] = 'c21fc2f5'  #  设备名称
+# desired_caps['appPackage'] = 'com.yuanding.seebaby'
+# desired_caps['appActivity'] = 'com.yuanding.seebaby.WelcomeActivity'
+# #相当于杀进程 
+# desired_caps['noReset'] = True
+# desired_caps['fullReset'] = False 
+appium:
+  ip: 127.0.0.1:4723/wd/hub
+
+device:
+  platformName: Android
+  platformVersion: 13
+  deviceName: c21fc2f5
+
+app:
+  appPackage: com.yuanding.seebaby
+  appActiivty: com.yuanding.seebaby.WelcomeActivity
+  noReset: True
+  fullReset: False
+
